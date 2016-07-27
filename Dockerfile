@@ -5,5 +5,5 @@ RUN  apt-get update && apt-get -y dist-upgrade && echo "deb http://www.deb-multi
 	graphicsmagick \
 	graphicsmagick-imagemagick-compat \
 	ffmpeg \
-&& apt-get clean \
+&& apt-get autoremove && apt-get clean \
 && rm -rf /var/lib/apt/lists/*
